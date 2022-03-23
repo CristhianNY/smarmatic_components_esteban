@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="display1_text_size">45sp</dimen>
+    <dimen name="display1_line_height">60sp</dimen>
+    <dimen name="display1_line_spacing_extra">15sp</dimen>
+    <string name="display1_letter_spacing">-0.00833</string>
+
+    <dimen name="display2_text_size">45sp</dimen>
+    <dimen name="display2_line_height">60sp</dimen>
+    <dimen name="display2_line_spacing_extra">15sp</dimen>
+    <string name="display2_letter_spacing">-0.0125</string>
+
+    <dimen name="display3_text_size">36sp</dimen>
+    <dimen name="display3_line_height">48sp</dimen>
+    <dimen name="display3_line_spacing_extra">12sp</dimen>
+    <string name="display3_letter_spacing">-0.01042</string>
+
+    <dimen name="heading1_text_size">26sp</dimen>
+    <dimen name="heading1_line_height">33sp</dimen>
+    <dimen name="heading1_line_spacing_extra">8sp</dimen>
+    <string name="heading1_letter_spacing">0.022059</string>
+
+    <dimen name="heading2_text_size">21sp</dimen>
+    <dimen name="heading2_line_height">30sp</dimen>
+    <dimen name="heading2_line_spacing_extra">9sp</dimen>
+    <string name="heading2_letter_spacing">0</string>
+
+    <dimen name="heading3_text_size">18sp</dimen>
+    <dimen name="heading3_line_height">24sp</dimen>
+    <dimen name="heading3_line_spacing_extra">6sp</dimen>
+    <string name="heading3_letter_spacing">0</string>
+
+    <dimen name="lead1_text_size">15sp</dimen>
+    <dimen name="lead1_line_height">24sp</dimen>
+    <dimen name="lead1_line_spacing_extra">9sp</dimen>
+    <string name="lead1_letter_spacing">0.0125</string>
+
+    <dimen name="lead2_text_size">15sp</dimen>
+    <dimen name="lead2_line_height">24sp</dimen>
+    <dimen name="lead2_line_spacing_extra">9sp</dimen>
+    <string name="lead2_letter_spacing">0.0125</string>
+
+    <dimen name="lead3_text_size">15sp</dimen>
+    <dimen name="lead3_line_height">24sp</dimen>
+    <dimen name="lead3_line_spacing_extra">9sp</dimen>
+    <string name="lead3_letter_spacing">0.0125</string>
+
+    <dimen name="body1_text_size">12sp</dimen>
+    <dimen name="body1_line_height">18sp</dimen>
+    <dimen name="body1_line_spacing_extra">6sp</dimen>
+    <string name="body1_letter_spacing">0</string>
+
+    <dimen name="body2_text_size">12sp</dimen>
+    <dimen name="body2_line_height">18sp</dimen>
+    <dimen name="body2_line_spacing_extra">6sp</dimen>
+    <string name="body2_letter_spacing">0</string>
+
+    <dimen name="caption1_text_size">9sp</dimen>
+    <dimen name="caption1_line_height">12sp</dimen>
+    <dimen name="caption1_line_spacing_extra">3sp</dimen>
+    <string name="caption1_letter_spacing">0.041667</string>
+
+    <dimen name="caption2_text_size">9sp</dimen>
+    <dimen name="caption2_line_height">12sp</dimen>
+    <dimen name="caption2_line_spacing_extra">3sp</dimen>
+    <string name="caption2_letter_spacing">0.041667</string>
+
+</resources>

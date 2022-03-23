@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Widget.Smartmatic.Tag" parent="Widget.MaterialComponents.Chip.Action">
+
+
+        <item name="chipBackgroundColor">#FFAACC</item>
+        <!--
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipIconTint">@color/chip_text_color</item>
+        <item name="closeIconTint">@color/chip_text_color</item>
+        -->
+        <item name="android:textAppearance">@style/AppTextAppearance.Smartmatic.Tag</item>
+    </style>
+
+    <style name="AppTextAppearance.Smartmatic.Tag" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+</resources>

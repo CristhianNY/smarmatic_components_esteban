@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SmartEco mobile typography styles-->
+
+    <item name="font_family_light" reference="roboto-light" type="font"/>
+    <item name="font_family_medium"  reference="roboto-medium" type="font"/>
+    <item name="font_family_regular" reference="roboto-regular" type="font"/>
+    <item name="font_family_bold" reference="roboto-bold" type="font"/>
+
+    <style name="TextAppearance.Smartmatic.Display1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/display1_text_size</item>
+        <item name="android:letterSpacing">@string/display1_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/display1_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Display2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:fontFamily">@font/font_family_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/display2_text_size</item>
+        <item name="android:letterSpacing">@string/display2_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/display2_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Display3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/display3_text_size</item>
+        <item name="android:letterSpacing">@string/display3_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/display3_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Heading1" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/heading1_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/heading1_line_spacing_extra</item>
+     </style>
+
+    <style name="TextAppearance.Smartmatic.Heading2" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/heading2_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/heading2_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Heading3" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/heading3_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/heading3_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Lead1" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/font_family_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/lead1_text_size</item>
+        <item name="android:letterSpacing">@string/lead1_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/lead1_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Lead2" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/font_family_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/lead2_text_size</item>
+        <item name="android:letterSpacing">@string/lead2_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/lead2_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Lead3" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/lead3_text_size</item>
+        <item name="android:letterSpacing">@string/lead3_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/lead3_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/font_family_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/body1_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/body1_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/body2_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/body2_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Caption1" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/font_family_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/caption1_text_size</item>
+        <item name="android:letterSpacing">@string/caption1_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/caption1_line_spacing_extra</item>
+    </style>
+
+    <style name="TextAppearance.Smartmatic.Caption2" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/font_family_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/caption2_text_size</item>
+        <item name="android:letterSpacing">@string/caption2_letter_spacing</item>
+    </style>
+
+</resources>

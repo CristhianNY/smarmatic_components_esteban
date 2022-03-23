@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="smarteco_card_elevation">2dp</dimen>
+
+    <style name="Widget.Smartmatic.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">@dimen/smarteco_card_elevation</item>
+    </style>
+
+</resources>

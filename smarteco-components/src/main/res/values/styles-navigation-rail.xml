@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Smartmatic.NavigationRailView" parent="Widget.MaterialComponents.NavigationRailView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.NavigationRailView</item>
+    </style>
+
+    <style name="ThemeOverlay.Smartmatic.NavigationRailView" parent="">
+        <item name="colorPrimary">@color/gray_90</item>
+
+    </style>
+
+</resources>

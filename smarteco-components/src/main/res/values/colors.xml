@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Message colors-->
+    <color name="color_info_background">@color/blue_20</color>
+    <color name="color_info_border">@color/blue_30</color>
+    <color name="color_info_text">@color/blue_80</color>
+
+
+
+    <!--System bars colors-->
+    <color name="color_status_bar">@color/black</color>
+    <color name="color_navidation_bar">@android:color/transparent</color>
+</resources>
