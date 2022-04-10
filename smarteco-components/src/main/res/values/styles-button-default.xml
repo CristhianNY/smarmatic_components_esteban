@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="smarteco_default_btn_padding_left">16dp</dimen>
+    <dimen name="smarteco_default_btn_padding_right">16dp</dimen>
+    <dimen name="smarteco_default_btn_inset_top">0dp</dimen>
+    <dimen name="smarteco_default_btn_inset_bottom">0dp</dimen>
+
+    <style name="Widget.Smartmatic.Button.Outlined.Default" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.Button.Default</item>
+        <item name="android:insetTop">@dimen/smarteco_default_btn_inset_top</item>
+        <item name="android:insetBottom">@dimen/smarteco_default_btn_inset_bottom</item>
+        <item name="strokeColor">@color/gray_30</item>
+    </style>
+
+    <style name="Widget.Smartmatic.Button.Ghost.Default" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.Button.Default</item>
+        <item name="android:paddingLeft">@dimen/smarteco_default_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/smarteco_default_btn_padding_right</item>
+    </style>
+
+    <style name="ThemeOverlay.Smartmatic.Button.Default" parent="">
+        <item name="textAppearanceButton">@style/TextAppearance.Smartmatic.Button</item>
+        <item name="colorPrimary">@color/gray_80</item>
+    </style>
+
+
+    <style name="Widget.Smartmatic.Button.Ghost.Default.IconOnly" parent="Widget.Smartmatic.Button.Ghost.Default">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+
+    <!-- Item list button style -->
+    <style name="Widget.Smartmatic.ItemButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.ItemButton</item>
+        <item name="android:paddingLeft">@dimen/smarteco_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/smarteco_btn_padding_right</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="ThemeOverlay.Smartmatic.ItemButton" parent="">
+        <item name="textAppearanceButton">@style/TextAppearance.Smartmatic.Button</item>
+        <item name="colorPrimary">@color/gray_80</item>
+        <item name="colorPrimaryVariant">@color/gray_100</item>
+    </style>
+
+
+    <!-- Toolbar button style -->
+    <style name="Widget.Smartmatic.ToolbarButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.TollbarButton</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Smartmatic.Body2</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Smartmatic.ToolbarButton</item>
+    </style>
+
+    <style name="ShapeAppearance.Smartmatic.ToolbarButton" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ThemeOverlay.Smartmatic.TollbarButton" parent="">
+        <item name="textAppearanceButton">@style/TextAppearance.Smartmatic.Body2</item>
+        <item name="colorPrimary">@color/gray_80</item>
+    </style>
+
+</resources>

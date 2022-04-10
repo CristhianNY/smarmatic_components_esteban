@@ -6,7 +6,7 @@
     <dimen name="smarteco_btn_inset_top">0dp</dimen>
     <dimen name="smarteco_btn_inset_bottom">0dp</dimen>
 
-    <style name="Widget.Smartmatic.Button" parent="Widget.MaterialComponents.Button">
+    <style name="Widget.Smartmatic.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.Button</item>
         <item name="android:insetTop">@dimen/smarteco_btn_inset_top</item>
         <item name="android:insetBottom">@dimen/smarteco_btn_inset_bottom</item>

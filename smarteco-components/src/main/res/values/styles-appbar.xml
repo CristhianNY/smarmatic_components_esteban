@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AppBarLayout style-->
+    <style name="Widget.Smartmatic.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.AppBarLayout</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="Widget.Smartmatic.AppBarLayout.Unelevated" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.AppBarLayout</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="ThemeOverlay.Smartmatic.AppBarLayout" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/gray_80</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/gray_80</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Smartmatic.Button</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <!-- Toolbar style-->
+    <style name="Widget.Smartmatic.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Smartmatic.Heading3</item>
+    </style>
+
+</resources>

@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Message colors-->
-    <color name="color_info_background">@color/blue_20</color>
-    <color name="color_info_border">@color/blue_30</color>
-    <color name="color_info_text">@color/blue_80</color>
+    <!-- Feedback message colors-->
+    <color name="feedback_info_background_color">@color/blue_20</color>
+    <color name="feedback_info_border_color">@color/blue_30</color>
+    <color name="feedback_info_text_color">@color/blue_80</color>
 
+    <color name="feedback_alert_background_color">@color/red_20</color>
+    <color name="feedback_alert_border_color">@color/red_30</color>
+    <color name="feedback_alert_text_color">@color/red_90</color>
 
+    <color name="feedback_warning_background_color">@color/gold_20</color>
+    <color name="feedback_warning_border_color">@color/gold_30</color>
+    <color name="feedback_warning_text_color">@color/gold_100</color>
+
+    <color name="feedback_success_background_color">@color/green_20</color>
+    <color name="feedback_success_border_color">@color/green_30</color>
+    <color name="feedback_success_text_color">@color/green_80</color>
+
+    <color name="feedback_shadow_color">@color/gray_alpha_40</color>
 
     <!--System bars colors-->
     <color name="color_status_bar">@color/black</color>

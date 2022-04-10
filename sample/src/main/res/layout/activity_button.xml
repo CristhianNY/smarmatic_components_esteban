@@ -15,6 +15,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/textButton"
+            style="@style/Widget.Smartmatic.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -22,6 +23,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/iconTextButton"
+            style="@style/Widget.Smartmatic.Button.Ghost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -40,14 +42,14 @@
                 android:id="@+id/iconOutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Smartmatic.Button.Outlined"
+                style="@style/Widget.Smartmatic.Button.Outlined.Default"
                 android:layout_marginBottom="16dp"
                 android:text="Hide"
                 app:icon="@drawable/ic_hide_color_control_normal_18dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ghostButton"
-            style="@style/Widget.Smartmatic.Button.Ghost"
+            style="@style/Widget.Smartmatic.Button.Ghost.Default"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -57,7 +59,7 @@
             android:id="@+id/iconGhostButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Widget.Smartmatic.Button.Ghost"
+            style="@style/Widget.Smartmatic.Button.Ghost.Default"
             android:layout_marginBottom="32dp"
             android:text="Show"
             app:icon="@drawable/ic_show_color_control_normal_18dp" />

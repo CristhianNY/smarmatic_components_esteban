@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Smartmatic.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/gray_80</item>
+    </style>
+
+    <!--TextView title styles-->
+    <style name="TextViewTitleSmall" parent="Widget.Smartmatic.TextView">
+        <item  name="android:textAppearance">@style/TextAppearance.Smartmatic.Lead3</item>
+    </style>
+    <style name="TextViewTitleMedium" parent="Widget.Smartmatic.TextView">
+        <item  name="android:textAppearance">@style/TextAppearance.Smartmatic.Heading3</item>
+    </style>
+    <style name="TextViewTitleLarge" parent="Widget.Smartmatic.TextView">
+        <item  name="android:textAppearance">@style/TextAppearance.Smartmatic.Heading2</item>
+    </style>
+    <style name="TextViewTitleXLarge" parent="Widget.Smartmatic.TextView">
+        <item  name="android:textAppearance">@style/TextAppearance.Smartmatic.Heading1</item>
+    </style>
+
+    <!--TextView captions styles-->
+    <style name="TextViewCaptionSmall" parent="Widget.Smartmatic.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Smartmatic.Body1</item>
+    </style>
+    <style name="TextViewCaptionMedium" parent="Widget.Smartmatic.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Smartmatic.Lead2</item>
+    </style>
+    <!--TextView values styles-->
+    <style name="TextViewValueSmall" parent="Widget.Smartmatic.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Smartmatic.Body2</item>
+    </style>
+    <style name="TextViewValueMedium" parent="Widget.Smartmatic.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Smartmatic.Lead3</item>
+    </style>
+
+</resources>

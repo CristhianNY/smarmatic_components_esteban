@@ -53,7 +53,7 @@
     <dimen name="body2_text_size">12sp</dimen>
     <dimen name="body2_line_height">18sp</dimen>
     <dimen name="body2_line_spacing_extra">6sp</dimen>
-    <string name="body2_letter_spacing">0</string>
+    <string name="body2_letter_spacing">0.0125</string>
 
     <dimen name="caption1_text_size">9sp</dimen>
     <dimen name="caption1_line_height">12sp</dimen>
