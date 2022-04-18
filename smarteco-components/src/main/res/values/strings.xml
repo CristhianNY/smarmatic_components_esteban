@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rts_result_transmission_system">RTS - Results Transmission System</string>
+    <string name="help">Help</string>
+    <string name="not_assigned">Not Assigned</string>
+    <string name="assigned">Assigned</string>
+    <string name="president">Presiding Officer</string>
+    <string name="configurator">Configurator</string>
+    <string name="operator">Operator</string>
+    <string name="technician">Technician</string>
+    <string name="training_mode">Training mode</string>
+    <string name="simulator_mode">Simulator mode</string>
+    <string name="production_mode">Production</string>
+    <string name="installer">Installer</string>
+    <string name="go_back">Go back</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="polling_location">Polling Location:&#160;</string>
+    <string name="btn_continue">Continue</string>
+    <string name="of_lower_case">&#160;of&#160;</string>
+</resources>

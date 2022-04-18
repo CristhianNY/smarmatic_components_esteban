@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCircle"
+            android:layout_width="@dimen/spacing_30"
+            android:layout_height="@dimen/spacing_30"
+            android:layout_marginStart="@dimen/spacing_24"
+            android:src="@drawable/circle_bordered_green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_check"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCircle"
+            app:layout_constraintEnd_toEndOf="@+id/ivCircle"
+            app:layout_constraintStart_toStartOf="@+id/ivCircle"
+            app:layout_constraintTop_toTopOf="@+id/ivCircle" />
+
+
+        <TextView
+            android:id="@+id/tvStepName"
+            style="@style/TextViewCaptionSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_6"
+            app:layout_constraintBottom_toTopOf="@+id/lineDivider"
+            app:layout_constraintStart_toEndOf="@+id/ivCircle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Check list" />
+
+        <View
+            android:id="@+id/lineDivider"
+            android:layout_width="@dimen/spacing_2"
+            android:layout_height="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_6"
+            android:layout_marginBottom="@dimen/spacing_3"
+            android:background="@color/gray_10"
+            android:paddingBottom="@dimen/spacing_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivCircle"
+            app:layout_constraintStart_toStartOf="@+id/ivCircle"
+            app:layout_constraintTop_toBottomOf="@+id/ivCircle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

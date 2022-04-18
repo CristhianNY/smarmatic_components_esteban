@@ -23,4 +23,9 @@
     <!--System bars colors-->
     <color name="color_status_bar">@color/black</color>
     <color name="color_navidation_bar">@android:color/transparent</color>
+    <color name="shadow_shadow_0">#d8d8d8</color>
+
+    <color name="color_green_green_70">#36a147</color>
+    <color name="submitted_color">#21632c</color>
+    <color name="submitted_background_color">#b3e6bb</color>
 </resources>

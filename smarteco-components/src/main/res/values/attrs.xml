@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MessageRibbon">
+        <attr name="error_title" format="string" />
+
+        <attr name="message_type" format="enum">
+            <enum name="message_error_type" value="0" />
+            <enum name="message_success_type" value="1" />
+            <enum name="message_warning_type" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SubHeader">
+        <attr name="subheader_title" format="string" />
+        <attr name="subheader_back_text" format="string" />
+        <attr name="subheader_polling_place" format="string" />
+        <attr name="subheader_polling_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ZoomAndRotateImage">
+        <attr name="image_base64" format="string" />
+        <attr name="show_rotate_icon" format="boolean" />
+    </declare-styleable>
+</resources>
