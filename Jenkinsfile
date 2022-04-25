@@ -4,8 +4,8 @@ pipeline {
   }
 
   stages {
-    steps {
-      stage('Build') {
+    stage('Build') {
+      steps {
         sh 'Building library...'
       }
     }
