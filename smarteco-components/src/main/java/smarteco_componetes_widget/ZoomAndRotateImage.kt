@@ -3,6 +3,7 @@ package smarteco_componetes_widget
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.util.AttributeSet
 import android.view.LayoutInflater
@@ -154,6 +155,12 @@ class ZoomAndRotateImage : ConstraintLayout {
         onRotateImage?.invoke(imageRotate)
     }
 
+    private fun setByteArrayImage(image: ByteArray?) {
+        if (image != null) {
+            binding.ivPicture.setImageBitmap(BitmapFactory.decodeByteArray(image, 0, image.size))
+        }
+    }
+
     companion object {
         @BindingAdapter("bitmap_image")
         @JvmStatic
@@ -177,6 +184,12 @@ class ZoomAndRotateImage : ConstraintLayout {
         @JvmStatic
         fun onRotateImage(view: ZoomAndRotateImage, rotateImage: ((bitMap: Bitmap) -> Unit)) {
             view.seOnRotateListener(rotateImage)
+        }
+
+        @BindingAdapter("bytearray_image")
+        @JvmStatic
+        fun setByteArrayImage(view: ZoomAndRotateImage, image: ByteArray?) {
+            view.setByteArrayImage(image)
         }
     }
 }
