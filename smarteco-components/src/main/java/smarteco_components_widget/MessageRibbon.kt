@@ -1,4 +1,4 @@
-package smarteco_componetes_widget
+package smarteco_components_widget
 
 import android.content.Context
 import android.util.AttributeSet
