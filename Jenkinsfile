@@ -4,8 +4,10 @@ pipeline {
   }
 
   stages {
-    stage('Build') {
-      sh 'Building library...'
+    steps {
+      stage('Build') {
+        sh 'Building library...'
+      }
     }
   }
 }
