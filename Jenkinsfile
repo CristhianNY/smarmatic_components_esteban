@@ -2,20 +2,26 @@ pipeline {
   agent {
     label 'mobile'
   }
+  
+  parameters {
+    choice(name: 'BUILD_TYPE',
+      choices:['Debug', 'Release'],
+      description: 'Type of build, ***Required***')
+  }
 
   stages {
     stage('Compile') {
       steps {
         sh 'echo "Compiling library..."'
         sh 'chmod u+x gradlew'
-        sh './gradlew compileDebugSources'
+        sh './gradlew compile${BUILD_TYPE}Sources'
       }
     }
     
     stage('Build') {
       steps {
         sh 'echo "Building library..."'
-        sh './gradlew assembleDebug'
+        sh './gradlew assemble${BUILD_TYPE}'
       }
     }
     
