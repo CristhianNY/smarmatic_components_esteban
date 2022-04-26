@@ -18,5 +18,23 @@ pipeline {
         sh './gradlew assembleDebug'
       }
     }
+    
+    stage('Publish') {
+      steps {
+        sh 'echo "Publishing library..."'
+        rtUpload (
+          serverId: "artifactory-proxmox",
+          spec:
+            """{
+              "files": [
+                {
+                  "pattern": "*.aar",
+                  "target": "mobile-gradle-develop-local"
+                }
+              ]
+            }"""
+        )
+      }
+    }
   }
 }
