@@ -65,7 +65,8 @@ class ZoomAndRotateImage : ConstraintLayout {
 
     private fun initialize(attrs: AttributeSet?) {
         loadAttrs(attrs)
-        if (showRotateIcon) binding.btnRotate.visibility = View.VISIBLE else binding.btnRotate.visibility = View.GONE
+        if (showRotateIcon) binding.btnRotate.visibility =
+            View.VISIBLE else binding.btnRotate.visibility = View.GONE
     }
 
     private fun loadAttrs(attrs: AttributeSet?) {
@@ -101,6 +102,11 @@ class ZoomAndRotateImage : ConstraintLayout {
         binding.ivPicture.scaleX = x + 0.5f
         binding.ivPicture.scaleY = y + 0.5f
         onZoomClick?.invoke(binding.ivPicture.drawable.toBitmap())
+    }
+    
+    fun restartZoom() {
+        binding.ivPicture.scaleX = 1.5f
+        binding.ivPicture.scaleY = 1.5f
     }
 
     @SuppressLint("ClickableViewAccessibility")
