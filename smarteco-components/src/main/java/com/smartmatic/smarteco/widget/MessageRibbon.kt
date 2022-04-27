@@ -1,4 +1,4 @@
-package smarteco_components_widget
+package com.smartmatic.smarteco.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -70,7 +70,7 @@ class MessageRibbon @JvmOverloads constructor(
         }
     }
 
-    fun setMessageTex(message: String) {
+    fun setMessageText(message: String) {
         binding.tvMessage.text = message
     }
 
