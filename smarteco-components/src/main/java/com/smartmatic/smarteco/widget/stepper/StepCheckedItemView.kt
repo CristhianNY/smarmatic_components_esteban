@@ -1,4 +1,4 @@
-package smarteco_components_widget.stepper
+package com.smartmatic.smarteco.widget.stepper
 
 import android.view.View
 import com.smartmatic.smarteco.R

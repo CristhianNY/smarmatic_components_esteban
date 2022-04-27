@@ -1,4 +1,4 @@
-package smarteco_components_widget
+package com.smartmatic.smarteco.widget
 
 import android.annotation.SuppressLint
 import android.content.Context

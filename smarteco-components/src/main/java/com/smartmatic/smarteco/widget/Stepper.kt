@@ -1,4 +1,4 @@
-package smarteco_components_widget
+package com.smartmatic.smarteco.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,11 +7,11 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.BindingAdapter
 import com.smartmatic.smarteco.databinding.StepperViewBinding
 import com.xwray.groupie.GroupieAdapter
-import smarteco_components_widget.stepper.StepCheckedItemView
-import smarteco_components_widget.stepper.StepSelectedItemView
-import smarteco_components_widget.stepper.StepUnSelectedItemView
-import smarteco_components_widget.stepper.StepperModel
-import smarteco_components_widget.stepper.TypeStep
+import com.smartmatic.smarteco.widget.stepper.StepCheckedItemView
+import com.smartmatic.smarteco.widget.stepper.StepSelectedItemView
+import com.smartmatic.smarteco.widget.stepper.StepUnSelectedItemView
+import com.smartmatic.smarteco.widget.stepper.StepperModel
+import com.smartmatic.smarteco.widget.stepper.TypeStep
 
 private const val DEFAULT_ATTR = 0
 

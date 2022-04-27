@@ -1,4 +1,4 @@
-package smarteco_components_widget.stepper
+package com.smartmatic.smarteco.widget.stepper
 
 enum class TypeStep {
     SELECTED, UNSELECTED, CHECKED
