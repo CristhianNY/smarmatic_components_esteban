@@ -24,8 +24,14 @@ pipeline {
         sh './gradlew assemble${BUILD_TYPE}'
       }
     }
+
+    stage('Local publish') {
+      steps {
+        sh './gradlew publish'
+      }
+    }
     
-    stage('Publish') {
+    stage('Publish to Artifactory') {
       steps {
         sh 'echo "Publishing library..."'
         rtUpload (
@@ -34,7 +40,7 @@ pipeline {
             """{
               "files": [
                 {
-                  "pattern": "*.aar",
+                  "pattern": "**/*",
                   "target": "mobile-gradle-develop-local"
                 }
               ]
