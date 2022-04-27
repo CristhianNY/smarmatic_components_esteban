@@ -40,7 +40,7 @@ pipeline {
             """{
               "files": [
                 {
-                  "pattern": "**/*",
+                  "pattern": "smarteco-components/build/repo/**/*",
                   "target": "mobile-gradle-develop-local"
                 }
               ]
