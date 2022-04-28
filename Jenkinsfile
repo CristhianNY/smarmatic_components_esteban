@@ -51,5 +51,16 @@ pipeline {
         }
       }
     }
+
+    stage('Create tag') {
+      steps {
+        sh '''
+          VERSION_NUMBER=$(cat smarteco-components/build.gradle | grep -m 1 lib_version | awk -F "'" '{print $2}')
+          echo "\$VERSION_NUMBER"
+          git tag -a smarteco-components-$VERSION_NUMBER -m "Tag created by user jenkins - smarteco-components-\$VERSION_NUMBER"
+          git push origin smarteco-components-$VERSION_NUMBER
+        '''
+      }
+    }
   }
 }
