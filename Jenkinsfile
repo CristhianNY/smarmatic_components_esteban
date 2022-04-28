@@ -28,6 +28,7 @@ pipeline {
     stage('Publish') {
       steps {
         sh 'echo "Publishing library..."'
+        sh './gradlew publish'
         ws("${WORKSPACE}/smarteco-components/build/repo") {
           rtUpload (
             serverId: "artifactory-proxmox",
