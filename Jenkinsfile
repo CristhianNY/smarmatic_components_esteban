@@ -6,7 +6,7 @@ pipeline {
   parameters {
     choice(name: 'BUILD_TYPE',
       choices:['Debug', 'Release'],
-      description: 'Type of build, ***Required***')
+      description: 'Type of build')
   }
 
   stages {
@@ -24,28 +24,30 @@ pipeline {
         sh './gradlew assemble${BUILD_TYPE}'
       }
     }
-
-    stage('Local publish') {
-      steps {
-        sh './gradlew publish'
-      }
-    }
     
-    stage('Publish to Artifactory') {
+    stage('Publish') {
       steps {
         sh 'echo "Publishing library..."'
-        rtUpload (
-          serverId: "artifactory-proxmox",
-          spec:
-            """{
-              "files": [
-                {
-                  "pattern": "smarteco-components/build/repo/**/*",
-                  "target": "mobile-gradle-develop-local"
-                }
-              ]
-            }"""
-        )
+        ws("${WORKSPACE}/smarteco-components/build/repo") {
+          rtUpload (
+            serverId: "artifactory-proxmox",
+            spec:
+              """{
+                "files": [
+                  {
+                    "pattern": "*.aar",
+                    "target": "mobile-gradle-develop-local/",
+                    "flat": "false"
+                  },
+                  {
+                    "pattern": "*.pom",
+                    "target": "mobile-gradle-develop-local/",
+                    "flat": "false"
+                  }
+                ]
+              }"""
+          )
+        }
       }
     }
   }
