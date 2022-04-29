@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'mobile'
+    label 'testing'
   }
   
   parameters {
@@ -31,7 +31,7 @@ pipeline {
         sh './gradlew publish'
         ws("${WORKSPACE}/smarteco-components/build/repo") {
           rtUpload (
-            serverId: "artifactory-proxmox",
+            serverId: "Artifactory",
             spec:
               """{
                 "files": [
