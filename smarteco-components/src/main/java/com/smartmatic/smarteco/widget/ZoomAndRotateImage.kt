@@ -45,6 +45,10 @@ class ZoomAndRotateImage : ConstraintLayout {
         binding.btnRotate.setOnClickListener {
             rotateBitmap()
         }
+
+        binding.btnCenter.setOnClickListener {
+            reCenterImage()
+        }
     }
 
     constructor(context: Context) : super(context) {
@@ -67,6 +71,12 @@ class ZoomAndRotateImage : ConstraintLayout {
         loadAttrs(attrs)
         if (showRotateIcon) binding.btnRotate.visibility =
             View.VISIBLE else binding.btnRotate.visibility = View.GONE
+    }
+
+    fun imagePreviewClick(action: () -> Unit) {
+        binding.btnView.setOnClickListener {
+            action()
+        }
     }
 
     private fun loadAttrs(attrs: AttributeSet?) {
@@ -103,10 +113,14 @@ class ZoomAndRotateImage : ConstraintLayout {
         binding.ivPicture.scaleY = y + 0.5f
         onZoomClick?.invoke(binding.ivPicture.drawable.toBitmap())
     }
-    
+
     fun restartZoom() {
         binding.ivPicture.scaleX = 1.5f
         binding.ivPicture.scaleY = 1.5f
+    }
+
+    fun reCenterImage() {
+        binding.ivPicture.animate().x(0f).y(0f).setDuration(0).start()
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -197,5 +211,12 @@ class ZoomAndRotateImage : ConstraintLayout {
         fun setByteArrayImage(view: ZoomAndRotateImage, image: ByteArray?) {
             view.setByteArrayImage(image)
         }
+
+        @BindingAdapter("image_view_click")
+        @JvmStatic
+        fun onSearchClick(view: ZoomAndRotateImage, onClickLink: () -> Unit) {
+            view.imagePreviewClick(onClickLink)
+        }
     }
+
 }
