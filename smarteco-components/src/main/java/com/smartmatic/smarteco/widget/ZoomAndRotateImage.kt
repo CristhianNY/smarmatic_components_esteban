@@ -92,6 +92,8 @@ class ZoomAndRotateImage : ConstraintLayout {
 
     private fun setImage(image: Bitmap) {
         binding.ivPicture.setImageBitmap(image)
+        binding.ivPicture.scaleX = 1f
+        binding.ivPicture.scaleY = 1f
     }
 
     private fun setZoomListener(zoomListener: (bitMap: Bitmap) -> Unit) {
@@ -115,11 +117,13 @@ class ZoomAndRotateImage : ConstraintLayout {
     }
 
     fun restartZoom() {
-        binding.ivPicture.scaleX = 1.5f
-        binding.ivPicture.scaleY = 1.5f
+        binding.ivPicture.scaleX = 1f
+        binding.ivPicture.scaleY = 1f
     }
 
     fun reCenterImage() {
+        binding.ivPicture.scaleX = 1f
+        binding.ivPicture.scaleY = 1f
         binding.ivPicture.animate().x(0f).y(0f).setDuration(0).start()
     }
 
