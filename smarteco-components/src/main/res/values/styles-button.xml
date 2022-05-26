@@ -16,7 +16,7 @@
         <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.Button</item>
         <item name="android:insetTop">@dimen/smarteco_btn_inset_top</item>
         <item name="android:insetBottom">@dimen/smarteco_btn_inset_bottom</item>
-        <item name="strokeColor">?attr/colorPrimary</item>
+        <item name="strokeColor">@color/button_outlined_stroke_color</item>
     </style>
 
     <style name="Widget.Smartmatic.Button.Ghost" parent="Widget.MaterialComponents.Button.TextButton">
