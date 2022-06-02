@@ -28,6 +28,10 @@
             android:name=".button.ButtonActivity"
             android:label="@string/title_button" />
 
+        <activity
+            android:name=".example.FeedbackActivity"
+            android:label="@string/title_button" />
+
     </application>
 
 </manifest>
