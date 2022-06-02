@@ -1,4 +1,4 @@
-package com.smartmatic.smarteco.sample.example
+package com.smartmatic.smarteco.sample.feedback
 
 import android.os.Bundle
 import android.view.View

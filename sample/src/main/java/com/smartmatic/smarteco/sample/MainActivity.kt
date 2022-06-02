@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.smartmatic.smarteco.sample.button.ButtonActivity
-import com.smartmatic.smarteco.sample.example.FeedbackActivity
+import com.smartmatic.smarteco.sample.feedback.FeedbackActivity
 import com.smartmatic.smarteco.sample.theming.ThemingActivity
 
 class MainActivity : AppCompatActivity() {
