@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sample">
         <activity
+            android:name=".stepper.StepperActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -18,20 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".theming.ThemingActivity"
-            android:label="@string/title_theming"
-            />
-
+            android:label="@string/title_theming" />
         <activity
             android:name=".button.ButtonActivity"
             android:label="@string/title_button" />
-
         <activity
             android:name=".feedback.FeedbackActivity"
             android:label="@string/title_button" />
-
     </application>
 
 </manifest>
