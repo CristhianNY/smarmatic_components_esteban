@@ -15,6 +15,7 @@ import androidx.core.graphics.drawable.toBitmap
 import androidx.databinding.BindingAdapter
 import com.smartmatic.smarteco.R
 import com.smartmatic.smarteco.databinding.ZoomAndRotateImageViewBinding
+import com.smartmatic.smarteco.utils.setOnSingleClickListener
 
 class ZoomAndRotateImage : ConstraintLayout {
     private var onZoomClick: ((creditCardData: Bitmap) -> Unit)? = null
@@ -34,19 +35,19 @@ class ZoomAndRotateImage : ConstraintLayout {
     }
 
     private fun initView() {
-        binding.btnPus.setOnClickListener {
+        binding.btnPus.setOnSingleClickListener {
             onZoomClick()
         }
 
-        binding.btnMinus.setOnClickListener {
+        binding.btnMinus.setOnSingleClickListener {
             onMinusClick()
         }
 
-        binding.btnRotate.setOnClickListener {
+        binding.btnRotate.setOnSingleClickListener {
             rotateBitmap()
         }
 
-        binding.btnCenter.setOnClickListener {
+        binding.btnCenter.setOnSingleClickListener {
             reCenterImage()
         }
     }
@@ -74,7 +75,7 @@ class ZoomAndRotateImage : ConstraintLayout {
     }
 
     fun imagePreviewClick(action: () -> Unit) {
-        binding.btnView.setOnClickListener {
+        binding.btnView.setOnSingleClickListener {
             action()
         }
     }
