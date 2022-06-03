@@ -8,6 +8,7 @@
             <enum name="message_error_type" value="0" />
             <enum name="message_success_type" value="1" />
             <enum name="message_warning_type" value="2" />
+            <enum name="message_info_type" value="3" />
         </attr>
     </declare-styleable>
 

@@ -1,10 +1,8 @@
 package com.smartmatic.smarteco.sample.theming
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.TaskStackBuilder
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.smartmatic.smarteco.sample.R
 

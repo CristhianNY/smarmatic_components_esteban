@@ -13,6 +13,7 @@ import com.smartmatic.smarteco.databinding.MessageRibbonViewBinding
 private const val ERROR_TYPE = 0
 private const val SUCCESS_TYPE = 1
 private const val WARNING_TYPE = 2
+private const val INFO_TYPE = 3
 private const val STRING_EMPTY = ""
 private const val DEFAULT_ATTR = 0
 
@@ -67,6 +68,7 @@ class MessageRibbon @JvmOverloads constructor(
             ERROR_TYPE -> setUpErrorView()
             SUCCESS_TYPE -> setUpSuccessView()
             WARNING_TYPE -> setUpWarningView()
+            INFO_TYPE -> setUpInfoView()
         }
     }
 
@@ -109,6 +111,28 @@ class MessageRibbon @JvmOverloads constructor(
             ContextCompat.getColor(
                 context,
                 R.color.gold_70
+            )
+        )
+    }
+
+    private fun setUpInfoView() {
+        binding.container.background = ContextCompat.getDrawable(context, R.drawable.info_shape)
+        binding.tvMessage.setTextColor(
+            ContextCompat.getColor(
+                context,
+                R.color.feedback_info_text_color
+            )
+        )
+        binding.ivLeft.setColorFilter(
+            ContextCompat.getColor(
+                context,
+                R.color.feedback_info_text_color
+            )
+        )
+        binding.ivClose.setColorFilter(
+            ContextCompat.getColor(
+                context,
+                R.color.feedback_info_text_color
             )
         )
     }
