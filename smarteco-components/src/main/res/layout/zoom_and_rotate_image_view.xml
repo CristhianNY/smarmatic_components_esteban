@@ -38,8 +38,8 @@
 
             <ImageView
                 android:id="@+id/ivPlus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/spacing_19"
+                android:layout_height="@dimen/spacing_19"
                 android:src="@drawable/ic_magnifying_glass_plus"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,8 +62,8 @@
 
             <ImageView
                 android:id="@+id/ivCenter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/spacing_19"
+                android:layout_height="@dimen/spacing_19"
                 android:src="@drawable/ic_magnifying_glass_less"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -86,8 +86,8 @@
 
             <ImageView
                 android:id="@+id/ivMinus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/spacing_19"
+                android:layout_height="@dimen/spacing_19"
                 android:background="@drawable/ic_center_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -110,8 +110,8 @@
 
             <ImageView
                 android:id="@+id/ivView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/spacing_19"
+                android:layout_height="@dimen/spacing_19"
                 android:background="@drawable/ic_open_images_arrows"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
