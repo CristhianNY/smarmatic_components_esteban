@@ -24,7 +24,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/ivCircle"
             app:layout_constraintEnd_toEndOf="@+id/ivCircle"
             app:layout_constraintStart_toStartOf="@+id/ivCircle"
-            app:layout_constraintTop_toTopOf="@+id/ivCircle" />
+            app:layout_constraintTop_toTopOf="@+id/ivCircle"
+            app:tint="?colorPrimary" />
 
 
         <TextView

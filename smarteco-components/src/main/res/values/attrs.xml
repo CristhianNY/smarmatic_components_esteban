@@ -10,6 +10,9 @@
             <enum name="message_warning_type" value="2" />
             <enum name="message_info_type" value="3" />
         </attr>
+
+        <attr name="is_close_visible" format="boolean" />
+
     </declare-styleable>
 
     <declare-styleable name="SubHeader">

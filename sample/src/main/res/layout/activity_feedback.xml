@@ -37,6 +37,7 @@
         android:layout_marginTop="32dp"
         android:visibility="gone"
         app:error_title="@string/feedback_message_title"
+        app:is_close_visible="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
