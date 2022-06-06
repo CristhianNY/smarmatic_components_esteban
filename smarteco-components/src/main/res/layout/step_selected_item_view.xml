@@ -34,7 +34,7 @@
             style="@style/TextViewValueSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/green_60"
+            android:textColor="?colorPrimary"
             android:layout_marginStart="@dimen/spacing_6"
             app:layout_constraintBottom_toBottomOf="@+id/ivCircle"
             app:layout_constraintStart_toEndOf="@+id/ivCircle"

@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'testing'
+    label 'Android'
   }
   
   parameters {
@@ -61,6 +61,12 @@ pipeline {
           git push origin smarteco-components-$VERSION_NUMBER
         '''
       }
+    }
+  }
+
+  post {
+    always {
+      deleteDir()
     }
   }
 }

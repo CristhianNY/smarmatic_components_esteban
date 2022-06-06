@@ -27,6 +27,8 @@ class MessageRibbon @JvmOverloads constructor(
 
     private var typeMessage: Int = 0
 
+    private var isCloseVisible: Boolean = true
+
     private val binding =
         MessageRibbonViewBinding.inflate(LayoutInflater.from(context), this, true)
 
@@ -58,7 +60,11 @@ class MessageRibbon @JvmOverloads constructor(
                 getString(R.styleable.MessageRibbon_error_title) ?: STRING_EMPTY
 
             typeMessage = getInt(R.styleable.MessageRibbon_message_type, 0)
+
+            isCloseVisible = getBoolean(R.styleable.MessageRibbon_is_close_visible, true)
+
             getTheViewBackground(typeMessage)
+            handleCloseIcon()
             recycle()
         }
     }
@@ -69,6 +75,14 @@ class MessageRibbon @JvmOverloads constructor(
             SUCCESS_TYPE -> setUpSuccessView()
             WARNING_TYPE -> setUpWarningView()
             INFO_TYPE -> setUpInfoView()
+        }
+    }
+
+    private fun handleCloseIcon() {
+        if (isCloseVisible) {
+            binding.ivClose.visibility = View.VISIBLE
+        } else {
+            binding.ivClose.visibility = View.GONE
         }
     }
 

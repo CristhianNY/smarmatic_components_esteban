@@ -8,4 +8,9 @@
     <string name="stepper_one">Step One</string>
     <string name="stepper_two">Step Two</string>
     <string name="stepper_three">Step Three</string>
+    <string name="checklist">Checklist</string>
+    <string name="capture_from_image">Capture form image</string>
+    <string name="type_in_results">Type in results</string>
+    <string name="review">Review</string>
+    <string name="submit">Submit</string>
 </resources>
