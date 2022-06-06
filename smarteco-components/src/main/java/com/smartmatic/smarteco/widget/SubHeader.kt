@@ -65,8 +65,14 @@ class SubHeader @JvmOverloads constructor(
         binding.tvGoBack.text = text
     }
 
+    fun setPollingPlaceLabel(text: String) {
+        subHeaderPollingPlaceTitle = text
+        binding.tvPollingLocation.text = subHeaderPollingPlaceTitle.plus(subHeaderPollingPlace)
+    }
+
     fun setPollingPlaceText(text: String) {
-        binding.tvPollingLocation.text = subHeaderPollingPlaceTitle.plus(text)
+        subHeaderPollingPlace = text
+        binding.tvPollingLocation.text = subHeaderPollingPlaceTitle.plus(subHeaderPollingPlace)
     }
 
     fun backAction(action: () -> Unit): SubHeader {
@@ -94,11 +100,18 @@ class SubHeader @JvmOverloads constructor(
             back?.let { view.setSubHeaderBackText(it) }
         }
 
-        @BindingAdapter("set_sub_header_polling_place")
+        @BindingAdapter("sub_header_polling_place")
         @JvmStatic
         fun setPollingPlace(view: SubHeader, pollingPlace: String?) {
             pollingPlace?.let { view.setPollingPlaceText(it) }
         }
+
+        @BindingAdapter("sub_header_polling_place_label")
+        @JvmStatic
+        fun setPollingPlaceLabel(view: SubHeader, label: String?) {
+            label?.let { view.setPollingPlaceLabel(it) }
+        }
+
 
         @BindingAdapter("sub_header_back_click")
         @JvmStatic
