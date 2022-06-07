@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="colorSubHeader" format="reference|color"/>
 
     <style name="Theme.Smartmatic.SmartEco" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Global color attributes -->
@@ -29,7 +28,9 @@
         <!-- Edit text widget style attribute -->
         <item name="textInputStyle">@style/Widget.Smartmatic.TextInputLayout</item>
         <!-- To support AppCompact dialogs -->
-        <item name="android:alertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog</item>
+        <item name="android:alertDialogTheme">
+            @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog
+        </item>
     </style>
 
     <style name="Theme.Smartmatic.SmartEco.Teal">
@@ -46,6 +47,6 @@
         <item name="colorPrimaryVariant">@color/green_90</item>
         <item name="colorSecondary">@color/green_70</item>
         <item name="colorSecondaryVariant">@color/green_90</item>
-        <item name="colorSubHeader">@color/gray_10</item>
+        <item name="subheader_background_color">@color/gray_10</item>
     </style>
 </resources>

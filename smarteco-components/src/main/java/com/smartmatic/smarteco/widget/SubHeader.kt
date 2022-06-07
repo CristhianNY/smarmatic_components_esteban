@@ -1,7 +1,6 @@
 package com.smartmatic.smarteco.widget
 
 import android.content.Context
-import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -27,7 +26,7 @@ class SubHeader @JvmOverloads constructor(
     private var subHeaderBackText: String = STRING_EMPTY
     private var subHeaderPollingPlace: String = STRING_EMPTY
     private var subHeaderPollingPlaceTitle: String = STRING_EMPTY
-    private var subHeaderBackgroundColor: String = STRING_EMPTY
+    private var subHeaderBackgroundColor: Int = 0
 
     init {
         initialize(attrs)
@@ -35,7 +34,7 @@ class SubHeader @JvmOverloads constructor(
 
     private fun initialize(attrs: AttributeSet?) {
         loadAttrs(attrs)
-        binding.ctSubHeader.setBackgroundColor(Color.parseColor(subHeaderBackgroundColor))
+        binding.ctSubHeader.setBackgroundColor(subHeaderBackgroundColor)
     }
 
     private fun loadAttrs(attrs: AttributeSet?) {
@@ -52,8 +51,10 @@ class SubHeader @JvmOverloads constructor(
                 getString(R.styleable.SubHeader_subheader_polling_place) ?: STRING_EMPTY
             subHeaderPollingPlaceTitle =
                 getString(R.styleable.SubHeader_subheader_polling_title) ?: STRING_EMPTY
-            subHeaderBackgroundColor =
-                getString(R.styleable.SubHeader_subheader_background_color) ?: STRING_EMPTY
+            subHeaderBackgroundColor = getColor(
+                R.styleable.SubHeader_subheader_background_color,
+                ContextCompat.getColor(context, R.color.gray_10)
+            )
             recycle()
         }
     }
