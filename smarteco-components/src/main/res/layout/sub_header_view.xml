@@ -12,7 +12,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/spacing_36"
             android:background="?subheader_background_color"
-            android:theme="@style/Theme.Smartmatic.SmartEco.Green"
             app:layout_constraintBottom_toTopOf="@+id/divSubHeader"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

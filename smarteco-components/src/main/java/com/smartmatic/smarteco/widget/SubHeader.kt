@@ -34,7 +34,6 @@ class SubHeader @JvmOverloads constructor(
 
     private fun initialize(attrs: AttributeSet?) {
         loadAttrs(attrs)
-        binding.ctSubHeader.setBackgroundColor(subHeaderBackgroundColor)
     }
 
     private fun loadAttrs(attrs: AttributeSet?) {
@@ -52,10 +51,16 @@ class SubHeader @JvmOverloads constructor(
             subHeaderPollingPlaceTitle =
                 getString(R.styleable.SubHeader_subheader_polling_title) ?: STRING_EMPTY
             subHeaderBackgroundColor = getColor(
-                R.styleable.SubHeader_subheader_background_color,
-                ContextCompat.getColor(context, R.color.gray_10)
+                R.styleable.SubHeader_subheader_background_color, 0
             )
+            setSubHeaderColor()
             recycle()
+        }
+    }
+
+    private fun setSubHeaderColor() {
+        if (subHeaderBackgroundColor != 0) {
+            binding.ctSubHeader.setBackgroundColor(subHeaderBackgroundColor)
         }
     }
 

@@ -31,6 +31,7 @@
         <item name="android:alertDialogTheme">
             @style/ThemeOverlay.MaterialComponents.MaterialAlertDialog
         </item>
+        <item name="subheader_background_color">@color/gray_10</item>
     </style>
 
     <style name="Theme.Smartmatic.SmartEco.Teal">
@@ -47,6 +48,6 @@
         <item name="colorPrimaryVariant">@color/green_90</item>
         <item name="colorSecondary">@color/green_70</item>
         <item name="colorSecondaryVariant">@color/green_90</item>
-        <item name="subheader_background_color">@color/gray_10</item>
+        <item name="subheader_background_color">@color/green_10</item>
     </style>
 </resources>
