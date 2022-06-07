@@ -90,12 +90,12 @@ class MessageRibbon @JvmOverloads constructor(
         binding.tvMessage.text = message
     }
 
-    private fun setUpErrorView() {
+    fun setUpErrorView() {
         binding.container.background = ContextCompat.getDrawable(context, R.drawable.error_shape)
         binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.red_90))
     }
 
-    private fun setUpSuccessView() {
+    fun setUpSuccessView() {
         binding.container.background = ContextCompat.getDrawable(context, R.drawable.success_shape)
         binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.submitted_color))
         binding.ivLeft.setImageDrawable(
@@ -112,7 +112,7 @@ class MessageRibbon @JvmOverloads constructor(
         )
     }
 
-    private fun setUpWarningView() {
+    fun setUpWarningView() {
         binding.container.background = ContextCompat.getDrawable(context, R.drawable.warning_shape)
         binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.gold_90))
         binding.ivLeft.setImageDrawable(
@@ -129,7 +129,7 @@ class MessageRibbon @JvmOverloads constructor(
         )
     }
 
-    private fun setUpInfoView() {
+    fun setUpInfoView() {
         binding.container.background = ContextCompat.getDrawable(context, R.drawable.info_shape)
         binding.tvMessage.setTextColor(
             ContextCompat.getColor(
