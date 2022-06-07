@@ -11,10 +11,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:visibility="gone"
-        app:error_title="@string/feedback_message_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:message="@string/feedback_message_title"
         app:message_type="message_error_type" />
 
     <com.smartmatic.smarteco.widget.MessageRibbon
@@ -23,10 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:visibility="gone"
-        app:error_title="@string/feedback_message_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageRibbonAlert"
+        app:message="@string/feedback_message_title"
         app:message_type="message_success_type" />
 
     <com.smartmatic.smarteco.widget.MessageRibbon
@@ -38,8 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageRibbonSuccess"
-        app:is_close_visible="true"
-        app:error_title="@string/feedback_message_title"
+        app:message="@string/feedback_message_title"
         app:message_type="message_warning_type" />
 
     <com.smartmatic.smarteco.widget.MessageRibbon
@@ -48,10 +47,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:visibility="gone"
-        app:error_title="@string/feedback_message_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageRibbonWarning"
+        app:dismissible="false"
+        app:message="@string/feedback_message_title"
         app:message_type="message_info_type" />
 
     <Button

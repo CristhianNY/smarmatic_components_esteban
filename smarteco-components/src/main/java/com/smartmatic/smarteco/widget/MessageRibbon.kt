@@ -9,7 +9,6 @@ import androidx.core.content.ContextCompat
 import com.smartmatic.smarteco.R
 import com.smartmatic.smarteco.databinding.MessageRibbonViewBinding
 
-
 private const val ERROR_TYPE = 0
 private const val SUCCESS_TYPE = 1
 private const val WARNING_TYPE = 2
@@ -23,11 +22,11 @@ class MessageRibbon @JvmOverloads constructor(
     defStyleAttr: Int = DEFAULT_ATTR
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
 
-    private var smErrorTitle: String = STRING_EMPTY
+    private var message: String = STRING_EMPTY
 
-    private var typeMessage: Int = 0
+    private var messageType: Int = 0
 
-    private var isCloseVisible: Boolean = true
+    private var dismissible: Boolean = true
 
     private val binding =
         MessageRibbonViewBinding.inflate(LayoutInflater.from(context), this, true)
@@ -42,7 +41,7 @@ class MessageRibbon @JvmOverloads constructor(
     }
 
     private fun initView() {
-        binding.tvMessage.text = smErrorTitle
+        binding.tvMessage.text = message
         binding.ivClose.setOnClickListener { this.visibility = View.INVISIBLE }
     }
 
@@ -56,14 +55,14 @@ class MessageRibbon @JvmOverloads constructor(
             R.styleable.MessageRibbon,
             0, 0
         ).apply {
-            smErrorTitle =
-                getString(R.styleable.MessageRibbon_error_title) ?: STRING_EMPTY
+            message =
+                getString(R.styleable.MessageRibbon_message) ?: STRING_EMPTY
 
-            typeMessage = getInt(R.styleable.MessageRibbon_message_type, 0)
+            messageType = getInt(R.styleable.MessageRibbon_message_type, 0)
 
-            isCloseVisible = getBoolean(R.styleable.MessageRibbon_is_close_visible, true)
+            dismissible = getBoolean(R.styleable.MessageRibbon_dismissible, true)
 
-            getTheViewBackground(typeMessage)
+            getTheViewBackground(messageType)
             handleCloseIcon()
             recycle()
         }
@@ -79,7 +78,7 @@ class MessageRibbon @JvmOverloads constructor(
     }
 
     private fun handleCloseIcon() {
-        if (isCloseVisible) {
+        if (dismissible) {
             binding.ivClose.visibility = View.VISIBLE
         } else {
             binding.ivClose.visibility = View.GONE
@@ -90,14 +89,32 @@ class MessageRibbon @JvmOverloads constructor(
         binding.tvMessage.text = message
     }
 
-    private fun setUpErrorView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_alert)
-        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.feedback_alert_text_color))
+    fun setUpErrorView() {
+        binding.container.background =
+            ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_alert)
+        binding.tvMessage.setTextColor(
+            ContextCompat.getColor(
+                context,
+                R.color.feedback_alert_text_color
+            )
+        )
+        binding.ivLeft.setImageDrawable(
+            ContextCompat.getDrawable(
+                context,
+                R.drawable.ic_alert_exclamation_circle_small
+            )
+        )
     }
 
-    private fun setUpSuccessView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_success)
-        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.feedback_success_text_color))
+    fun setUpSuccessView() {
+        binding.container.background =
+            ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_success)
+        binding.tvMessage.setTextColor(
+            ContextCompat.getColor(
+                context,
+                R.color.feedback_success_text_color
+            )
+        )
         binding.ivLeft.setImageDrawable(
             ContextCompat.getDrawable(
                 context,
@@ -106,9 +123,15 @@ class MessageRibbon @JvmOverloads constructor(
         )
     }
 
-    private fun setUpWarningView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_warning)
-        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.feedback_warning_text_color))
+    fun setUpWarningView() {
+        binding.container.background =
+            ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_warning)
+        binding.tvMessage.setTextColor(
+            ContextCompat.getColor(
+                context,
+                R.color.feedback_warning_text_color
+            )
+        )
         binding.ivLeft.setImageDrawable(
             ContextCompat.getDrawable(
                 context,
@@ -117,12 +140,19 @@ class MessageRibbon @JvmOverloads constructor(
         )
     }
 
-    private fun setUpInfoView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_info)
+    fun setUpInfoView() {
+        binding.container.background =
+            ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_info)
         binding.tvMessage.setTextColor(
             ContextCompat.getColor(
                 context,
                 R.color.feedback_info_text_color
+            )
+        )
+        binding.ivLeft.setImageDrawable(
+            ContextCompat.getDrawable(
+                context,
+                R.drawable.ic_alert_exclamation_circle_small
             )
         )
         binding.ivLeft.setColorFilter(
