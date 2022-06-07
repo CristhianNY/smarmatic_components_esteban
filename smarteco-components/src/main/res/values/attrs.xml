@@ -20,6 +20,7 @@
         <attr name="subheader_back_text" format="string" />
         <attr name="subheader_polling_place" format="string" />
         <attr name="subheader_polling_title" format="string" />
+        <attr name="subheader_background_color" format="color" />
     </declare-styleable>
 
     <declare-styleable name="ZoomAndRotateImage">

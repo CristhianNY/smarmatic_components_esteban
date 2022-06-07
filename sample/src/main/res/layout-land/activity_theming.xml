@@ -13,16 +13,27 @@
             android:paddingBottom="16dp"
             android:clipToPadding="false">
 
+        <com.smartmatic.smarteco.widget.SubHeader
+            android:id="@+id/subHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subheader_title="Title"
+            app:subheader_polling_place="12345"
+            app:subheader_back_text="back"
+            app:subheader_polling_title="polling place"/>
+
 
         <com.google.android.material.button.MaterialButtonToggleGroup
             android:id="@+id/toggleGroupHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subHeader"
             app:singleSelection="true">
 
             <com.google.android.material.button.MaterialButton
