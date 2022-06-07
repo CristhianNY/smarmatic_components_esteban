@@ -7,8 +7,8 @@
 
     <com.smartmatic.smarteco.widget.MessageRibbon
         android:id="@+id/messageRibbonAlert"
-        android:layout_width="408dp"
-        android:layout_height="47dp"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:visibility="gone"
         app:error_title="@string/feedback_message_title"
@@ -19,40 +19,37 @@
 
     <com.smartmatic.smarteco.widget.MessageRibbon
         android:id="@+id/messageRibbonSuccess"
-        android:layout_width="408dp"
-        android:layout_height="47dp"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:visibility="gone"
         app:error_title="@string/feedback_message_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageRibbonAlert"
         app:message_type="message_success_type" />
 
     <com.smartmatic.smarteco.widget.MessageRibbon
         android:id="@+id/messageRibbonWarning"
-        android:layout_width="408dp"
-        android:layout_height="47dp"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:visibility="gone"
-        app:error_title="@string/feedback_message_title"
-        app:is_close_visible="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageRibbonSuccess"
+        app:is_close_visible="true"
+        app:error_title="@string/feedback_message_title"
         app:message_type="message_warning_type" />
 
     <com.smartmatic.smarteco.widget.MessageRibbon
         android:id="@+id/messageRibbonInfo"
-        android:layout_width="408dp"
-        android:layout_height="47dp"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:visibility="gone"
         app:error_title="@string/feedback_message_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageRibbonWarning"
         app:message_type="message_info_type" />

@@ -91,46 +91,34 @@ class MessageRibbon @JvmOverloads constructor(
     }
 
     private fun setUpErrorView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.error_shape)
-        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.red_90))
+        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_alert)
+        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.feedback_alert_text_color))
     }
 
     private fun setUpSuccessView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.success_shape)
-        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.submitted_color))
+        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_success)
+        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.feedback_success_text_color))
         binding.ivLeft.setImageDrawable(
             ContextCompat.getDrawable(
                 context,
                 R.drawable.ic_alert_check_circle
             )
         )
-        binding.ivClose.setColorFilter(
-            ContextCompat.getColor(
-                context,
-                R.color.color_green_green_70
-            )
-        )
     }
 
     private fun setUpWarningView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.warning_shape)
-        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.gold_90))
+        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_warning)
+        binding.tvMessage.setTextColor(ContextCompat.getColor(context, R.color.feedback_warning_text_color))
         binding.ivLeft.setImageDrawable(
             ContextCompat.getDrawable(
                 context,
                 R.drawable.ic_alert_exclamation_triangle
             )
         )
-        binding.ivClose.setColorFilter(
-            ContextCompat.getColor(
-                context,
-                R.color.gold_70
-            )
-        )
     }
 
     private fun setUpInfoView() {
-        binding.container.background = ContextCompat.getDrawable(context, R.drawable.info_shape)
+        binding.container.background = ContextCompat.getDrawable(context, R.drawable.backgroung_feedback_info)
         binding.tvMessage.setTextColor(
             ContextCompat.getColor(
                 context,
@@ -138,12 +126,6 @@ class MessageRibbon @JvmOverloads constructor(
             )
         )
         binding.ivLeft.setColorFilter(
-            ContextCompat.getColor(
-                context,
-                R.color.feedback_info_text_color
-            )
-        )
-        binding.ivClose.setColorFilter(
             ContextCompat.getColor(
                 context,
                 R.color.feedback_info_text_color

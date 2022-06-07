@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="smarteco_rm_min_height">37dp</dimen>
+
+    <style name="TextAppearance.Smartmatic.RibbonMessage" parent="TextAppearance.Smartmatic.Body2">
+        <item name="fontFamily">@font/font_family_bold</item>
+        <item name="android:fontFamily">@font/font_family_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/body2_text_size</item>
+        <item name="android:letterSpacing">@string/body2_letter_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/body2_line_spacing_extra</item>
+    </style>
+
+</resources>
