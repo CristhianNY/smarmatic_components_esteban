@@ -1,10 +1,12 @@
 package com.smartmatic.smarteco.widget
 
 import android.content.Context
+import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
 import com.smartmatic.smarteco.R
 import com.smartmatic.smarteco.databinding.SubHeaderViewBinding
@@ -25,6 +27,7 @@ class SubHeader @JvmOverloads constructor(
     private var subHeaderBackText: String = STRING_EMPTY
     private var subHeaderPollingPlace: String = STRING_EMPTY
     private var subHeaderPollingPlaceTitle: String = STRING_EMPTY
+    private var subHeaderBackgroundColor: String = STRING_EMPTY
 
     init {
         initialize(attrs)
@@ -32,10 +35,7 @@ class SubHeader @JvmOverloads constructor(
 
     private fun initialize(attrs: AttributeSet?) {
         loadAttrs(attrs)
-        initView()
-    }
-
-    private fun initView() {
+        binding.ctSubHeader.setBackgroundColor(Color.parseColor(subHeaderBackgroundColor))
     }
 
     private fun loadAttrs(attrs: AttributeSet?) {
@@ -50,9 +50,10 @@ class SubHeader @JvmOverloads constructor(
                 getString(R.styleable.SubHeader_subheader_back_text) ?: STRING_EMPTY
             subHeaderPollingPlace =
                 getString(R.styleable.SubHeader_subheader_polling_place) ?: STRING_EMPTY
-
             subHeaderPollingPlaceTitle =
                 getString(R.styleable.SubHeader_subheader_polling_title) ?: STRING_EMPTY
+            subHeaderBackgroundColor =
+                getString(R.styleable.SubHeader_subheader_background_color) ?: STRING_EMPTY
             recycle()
         }
     }
@@ -67,6 +68,10 @@ class SubHeader @JvmOverloads constructor(
 
     fun setPollingPlaceText(text: String) {
         binding.tvPollingLocation.text = subHeaderPollingPlaceTitle.plus(text)
+    }
+
+    fun setSubHeaderColor(color: Int) {
+        binding.ctSubHeader.setBackgroundColor(ContextCompat.getColor(context, color))
     }
 
     fun backAction(action: () -> Unit): SubHeader {

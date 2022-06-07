@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="colorSubHeader" format="reference|color"/>
+
     <style name="Theme.Smartmatic.SmartEco" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Global color attributes -->
         <item name="colorPrimary">@color/purple_60</item>
@@ -44,5 +46,6 @@
         <item name="colorPrimaryVariant">@color/green_90</item>
         <item name="colorSecondary">@color/green_70</item>
         <item name="colorSecondaryVariant">@color/green_90</item>
+        <item name="colorSubHeader">@color/gray_10</item>
     </style>
 </resources>
