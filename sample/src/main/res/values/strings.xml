@@ -3,7 +3,7 @@
 
     <string name="title_theming">Theming</string>
     <string name="title_button">Buttons</string>
-    <string name="feedback_message_title">Feedback Message Title</string>
+    <string name="feedback_message_title">Feedback message title</string>
     <string name="show_alert">Show Alerts</string>
     <string name="stepper_one">Step One</string>
     <string name="stepper_two">Step Two</string>

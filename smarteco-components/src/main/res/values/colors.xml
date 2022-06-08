@@ -14,9 +14,9 @@
     <color name="feedback_warning_border_color">@color/gold_30</color>
     <color name="feedback_warning_text_color">@color/gold_100</color>
 
-    <color name="feedback_success_background_color">@color/green_20</color>
-    <color name="feedback_success_border_color">@color/green_30</color>
-    <color name="feedback_success_text_color">@color/green_80</color>
+    <color name="feedback_success_background_color">#d9f2dd</color>
+    <color name="feedback_success_border_color">#b3e6bb</color>
+    <color name="feedback_success_text_color">#21632c</color>
 
     <color name="feedback_shadow_color">@color/gray_alpha_40</color>
 
@@ -25,7 +25,4 @@
     <color name="color_navidation_bar">@android:color/transparent</color>
     <color name="shadow_shadow_0">#d8d8d8</color>
 
-    <color name="color_green_green_70">#36a147</color>
-    <color name="submitted_color">#21632c</color>
-    <color name="submitted_background_color">#b3e6bb</color>
 </resources>
