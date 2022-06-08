@@ -12,7 +12,7 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/error_shape"
+            android:background="@drawable/backgroung_feedback_alert"
             android:paddingTop="@dimen/spacing_9"
             android:paddingBottom="@dimen/spacing_9"
             app:layout_constraintBottom_toBottomOf="parent"
