@@ -5,8 +5,8 @@
     <color name="text_field_outlined_color">@color/gray_90</color>
     <color name="text_field_error_color">@color/red_80</color>
 
-    <dimen name="text_field_padding_top">11dp</dimen>
-    <dimen name="text_field_padding_bottom">11dp</dimen>
+    <dimen name="text_field_padding_top">14dp</dimen>
+    <dimen name="text_field_padding_bottom">14dp</dimen>
     <dimen name="text_field_border_width">1dp</dimen>
     <dimen name="text_field_border_width_focused">1.5dp</dimen>
 
@@ -25,7 +25,7 @@
 
     <style name="Widget.Smartmatic.TextInputEditText" parent="Base.Widget.MaterialComponents.TextInputEditText">
         <item name="android:paddingTop">@dimen/text_field_padding_top</item>
-        <item name="android:paddingBottom">@dimen/text_field_padding_top</item>
+        <item name="android:paddingBottom">@dimen/text_field_padding_bottom</item>
     </style>
 
     <style name="TextFieldCaptionSmall" parent="Widget.Smartmatic.TextView">

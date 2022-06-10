@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.smartmatic.smarteco.sample.button.ButtonActivity
 import com.smartmatic.smarteco.sample.feedback.FeedbackActivity
+import com.smartmatic.smarteco.sample.spinner.SpinnerActivity
 import com.smartmatic.smarteco.sample.stepper.StepperActivity
 import com.smartmatic.smarteco.sample.theming.ThemingActivity
 
@@ -27,10 +28,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.buttonStepperButton).setOnClickListener {
-            startActivity(
-                Intent(this, StepperActivity::class.java)
-            )
+            startActivity(Intent(this, StepperActivity::class.java))
         }
 
+        findViewById<Button>(R.id.spinnerPlaygroundButton).setOnClickListener {
+            startActivity(Intent(this, SpinnerActivity::class.java))
+        }
     }
 }
