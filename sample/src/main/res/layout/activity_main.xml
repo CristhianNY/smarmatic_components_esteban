@@ -53,6 +53,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonFeedbackButton" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/spinnerPlaygroundButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStepperButton" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

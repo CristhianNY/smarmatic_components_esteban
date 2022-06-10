@@ -23,4 +23,9 @@
         <attr name="image_base64" format="string" />
         <attr name="show_rotate_icon" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="Spinner">
+        <attr name="spinner_font_type" format="string" />
+    </declare-styleable>
+
 </resources>

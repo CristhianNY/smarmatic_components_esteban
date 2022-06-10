@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sample">
         <activity
+            android:name=".spinner.SpinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".stepper.StepperActivity"
             android:exported="false" />
         <activity

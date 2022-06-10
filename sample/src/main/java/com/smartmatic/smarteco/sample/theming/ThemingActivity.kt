@@ -5,6 +5,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.smartmatic.smarteco.sample.R
+import com.smartmatic.smarteco.widget.spinner.SpinnerAdapter
 
 
 class ThemingActivity : AppCompatActivity() {
@@ -19,6 +20,11 @@ class ThemingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_theming)
 
         val materialBTG = findViewById<MaterialButtonToggleGroup>(R.id.toggleGroupHorizontal)
+
+        var array = arrayOf("India", "USA", "China", "Japan", "Other")
+        val adapter = SpinnerAdapter(this, array)
+        val  smartecoSpinner2 = findViewById<com.smartmatic.smarteco.widget.Spinner>(R.id.smartecoSpinner2)
+        smartecoSpinner2?.setAdapter(adapter)
 
         when (ThemeUtils.getTheme()) {
             ThemeUtils.PURPLE -> materialBTG.check(R.id.PurpleThemeButton)
