@@ -21,6 +21,7 @@
         <item name="colorError">@color/text_field_error_color</item>
         <item name="textAppearanceSubtitle1">@style/TextAppearance.Smartmatic.Lead2</item>
         <item name="editTextStyle">@style/Widget.Smartmatic.TextInputEditText</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.Smartmatic.TextInputEditText</item>
     </style>
 
     <style name="Widget.Smartmatic.TextInputEditText" parent="Base.Widget.MaterialComponents.TextInputEditText">
