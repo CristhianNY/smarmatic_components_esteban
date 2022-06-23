@@ -7,8 +7,8 @@
     <!-- Dialog button style -->
     <style name="Widget.Smartmatic.Button.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="materialThemeOverlay">@style/ThemeOverlay.Smartmatic.Button.Dialog</item>
-        <item name="android:paddingLeft">@dimen/smarteco_dialog_btn_padding_left</item>
-        <item name="android:paddingRight">@dimen/smarteco_dialog_btn_padding_right</item>
+        <item name="android:paddingStart">@dimen/smarteco_dialog_btn_padding_left</item>
+        <item name="android:paddingEnd">@dimen/smarteco_dialog_btn_padding_right</item>
     </style>
 
     <style name="ThemeOverlay.Smartmatic.Button.Dialog" parent="">
